@@ -1,5 +1,46 @@
+# Compiled files
 *.class
 *.log
+*.jar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# SBT specific
+target/
+project/target/
+project/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+
+# Eclipse specific
+.classpath
+.project
+.settings/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+yellow_trip_sample_100000.csv
+src/resources/yellow_trip_sample_100000.csv
+
+# Ignore any local configuration files that might contain sensitive information
+*.conf
+
+# Temporary files
+*~
+
+# Logs
+logs/
+*.log
