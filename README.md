@@ -1,4 +1,4 @@
-For this project, we need to conduct spatial hot spot analysis. This involves two main tasks:
+This project conducts spatial hot spot analysis. This involves two main tasks:
 
 1. Hot Zone Analysis
 
