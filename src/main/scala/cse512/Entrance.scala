@@ -12,7 +12,8 @@ object Entrance extends App {
 
   val spark = SparkSession
     .builder()
-    .appName(/enter file path)
+    //enter file path
+    .appName()
     .config("spark.executor.memory", "2g")
     .master("local[*]")
     .getOrCreate()
