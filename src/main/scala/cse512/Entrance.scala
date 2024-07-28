@@ -12,8 +12,7 @@ object Entrance extends App {
 
   val spark = SparkSession
     .builder()
-    //enter file path
-    .appName()
+    .appName("Hot-spot-analysis")
     .config("spark.executor.memory", "2g")
     .master("local[*]")
     .getOrCreate()
