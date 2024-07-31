@@ -22,6 +22,14 @@ Each cell unit is sized 0.01 x 0.01 degrees in latitude and longitude.
 We’ll use 1 day as the Time Step size, with the first day of a month being step 1. Every month is treated as having 31 days.
 Only the Pick-up Location will be considered.
 
-To run this program download the src file
+To run this program download the project zip file and run sbt assembly in your work environment. This will create your jar file which you will pass through the spark-submit command in your work environment. To run both Hot Zone Analysis and Hot Cell Analysis run this command in your work environment: 
+
+spark-submit \
+  --class cse512.Entrance \
+  --master "local[*]" \
+  ./target/scala-2.12/CSE512-Hotspot-Analysis-Template-assembly-0.1.0.jar \
+  testoutput hotzoneanalysis ./src/resources/point_hotzone.csv ./src/resources/zone-hotzone.csv hotcellanalysis ./src/resources/yellow_trip_sample_100000.csv
+
+The ouput csv files will be saved in folders within the project file. You can rename these folders as their created within the code if you'd like.
 
 This project was apart of CSE511 Summer 2024 at Arizona State University
