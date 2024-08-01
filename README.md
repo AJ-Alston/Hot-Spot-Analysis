@@ -47,4 +47,14 @@ spark-submit \
 
 The ouput csv files will be saved in folders within the project file. You can rename these folders as their created within the code if you'd like.
 
+*If you're having trouble compiling a .jar file, make sure you have the proper versions of Scala (2.12 or 2.13) is ocnfigured on your system. Project has the following requirements: 
+
+-Apache Spark 3.4.1
+-SparkSQL 3.4.1
+-Scala 2.13
+-Java 17.0.8
+-Hadoop 3.3.6
+-Python 3.10
+-SBT 1.9.4
+
 This project was apart of CSE511 Summer 2024 at Arizona State University
